@@ -41,7 +41,7 @@ def sigma (normmean, weights):
 
     return math.sqrt(summ/np.sum(weights))
 
-mat = sc.loadmat("/Users/sonachitchyan/Downloads/01.10.2019_12_10_37")
+mat = sc.loadmat("/Users/")
 matrix = mat.get("profiledata")
 cleanedmatrix = matrix[:]
 cleanedmatrix[cleanedmatrix < np.max(cleanedmatrix) * 0.3] = 0
